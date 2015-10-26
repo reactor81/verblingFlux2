@@ -26,7 +26,7 @@ When user logs in, a very naive (rough) script kicks off, triggering a series of
 
 ##### Authentication and Security/Rules not included
 
-Normally the server would generate a custom auth token and pass it down to the user through isorphism, and the user would use that to authWithCustomToken. Security Rules setup on the Firebase instance would then limit read/writes accordingly. Since we do not have a server and I want to keep startup very simple, no authorization or rules are in place. 
+Normally the server would generate a custom auth token and pass it down to the user through isorphism, and the user would use that to authWithCustomToken. Security Rules setup on the Firebase instance would then limit read/writes accordingly. Since we do not have a server and I want to keep startup very simple, no authorization or rules are in place. My 'Fireman.js' utility class normally handles all of this authentication through Promises, but for now it has been left out and is a very shallow singleton class.
 
 ### Run
 
