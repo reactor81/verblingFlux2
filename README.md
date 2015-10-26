@@ -6,6 +6,8 @@
 
 This version has a Firebase chat component added - no server required. 
 
+![alt tag](/demo.gif)
+
 ### Features
 
 #### Firebase Chat Component
