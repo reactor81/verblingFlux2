@@ -18,7 +18,13 @@ A very simple Firebase application has been setup here. Open index.html on sever
 
 ##### Firebase implementation
 
-Regarding the implementation, I added a 'chats' branch for new chat messages ({author, message}) and a 'users' branch for the list of online users ({username}). Users get pushed when the app starts up, and removed whenever the user leaves the page (including browser reload, browser close, earthquake, fire, aliens) using FirebaseRef.onDisconnect. When user logs in, a very naive (rough) script kicks off, triggering a series of messages from the Star Wars character bots. When multiple users connect in a very short time frame, it can seem as the bots are repeating themselves. This should be improved upon in a later release. Having a bot respond to user message should also be simple enough. 
+Regarding the implementation, I added a 'chats' branch for new chat messages ({author, message}) and a 'users' branch for the list of online users ({username}). Users get pushed when the app starts up, and removed whenever the user leaves the page (including browser reload, browser close, earthquake, fire, aliens) using FirebaseRef.onDisconnect. 
+
+##### Star Wars Character Bots
+
+When user logs in, a very naive (rough) script kicks off, triggering a series of messages from the Star Wars character bots. When multiple users connect in a very short time frame, it can seem as the bots are repeating themselves. This should be improved upon in a later release. Having a bot respond to user message should also be simple enough. 
+
+##### Authentication and Security/Rules not included
 
 Normally the server would generate a custom auth token and pass it down to the user through isorphism, and the user would use that to authWithCustomToken. Security Rules setup on the Firebase instance would then limit read/writes accordingly. Since we do not have a server and I want to keep startup very simple, no authorization or rules are in place. 
 
